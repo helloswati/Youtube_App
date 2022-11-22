@@ -12,14 +12,14 @@ fetch(video_http + new URLSearchParams({
     maxResults: 100,
     regionCode: 'IN'
 }))
-.then(res => res.json())
-.then(data => {
-    console.log(data)
-    data.items.forEach(item => {
-        getChannelIcon(item);
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        data.items.forEach(item => {
+            getChannelIcon(item);
+        })
     })
-})
-.catch(err => console.log(err));
+    .catch(err => console.log(err));
 
 const getChannelIcon = (video_data) => {
     fetch(channel_http + new URLSearchParams({
@@ -27,11 +27,11 @@ const getChannelIcon = (video_data) => {
         part: 'snippet',
         id: video_data.snippet.channelId
     }))
-    .then(res => res.json())
-    .then(data => {
-        video_data.channelThumbnail = data.items[0].snippet.thumbnails.default.url;
-        makeVideoCard(video_data);
-    })
+        .then(res => res.json())
+        .then(data => {
+            video_data.channelThumbnail = data.items[0].snippet.thumbnails.default.url;
+            makeVideoCard(video_data);
+        })
 }
 
 const makeVideoCard = (data) => {
@@ -58,17 +58,8 @@ const searchBtn = document.querySelector('.search-btn');
 let searchLink = "https://www.youtube.com/results?search_query=";
 
 searchBtn.addEventListener('click', () => {
-    if(searchInput.value.length){
+    if (searchInput.value.length) {
         location.href = searchLink + searchInput.value;
     }
 })
-
-
-const menu = document.querySelector('#menu');
-
-const sidebar = document.querySelector('.sidebar');
-
-menu.addEventListener('click', function () {
-  sidebar.classList.toggle('show-sidebar');
-}); 
 
