@@ -37,7 +37,7 @@ const getChannelIcon = (video_data) => {
 const makeVideoCard = (data) => {
     console.log(data)
     videoContainer.innerHTML += `
-    <div class="video" >
+    <div class="video" onclick="location.href="https://www.youtube.com/watch?v=${data.id}"">
         <img src="${data.snippet.thumbnails.high.url}" class="thumbnail" alt="">
 
         <div class="content">
@@ -63,3 +63,10 @@ searchBtn.addEventListener('click', () => {
     }
 })
 
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
