@@ -1,6 +1,6 @@
 const videoContainer = document.querySelector('.video-container');
 
-let api_key = "AIzaSyAyRUXdXuAShdGdlobE82faU-uQX9qXkak";
+let api_key = "api key";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 let search = "https://www.googleapis.com/youtube/v3/search";
