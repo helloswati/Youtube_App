@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 
@@ -14,23 +15,26 @@
 
     <nav class="navbar">
         <!-- sidebar -->
-        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+        <div class="w3-sidebar w3-bar-block w3-border-right " style="display:none" id="mySidebar">
             <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/home.PNG" alt="">home</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/explore.PNG" alt="">explore</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/subscription.PNG" alt="">subscription</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/library.PNG" alt="">library</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/history.PNG" alt="">history</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/your-video.PNG" alt="">your video</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/watch-later.PNG" alt="">watch later</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/liked video.PNG" alt="">like video</a>
-            <a href="#" class="w3-bar-item w3-button"><img src="img/show more.PNG" alt="">show more</a>
+            <ul >
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/home.PNG" alt="">home</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/explore.PNG" alt="">explore</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/subscription.PNG" alt="">subscription</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/library.PNG" alt="">library</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/history.PNG" alt="">history</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/your-video.PNG" alt="">your video</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/watch-later.PNG" alt="">watch later</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/liked video.PNG" alt="">like video</a></li>
+            <li a href="#" class="w3-bar-item w3-button"><img src="img/show more.PNG" alt="">show more</a></li>
+            </ul>
 
         </div>
 
         <!-- Page Content -->
-        <div class="w3-teal  ">
-            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        
+        <div class="w3-teal">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
         </div>
 
         </div>

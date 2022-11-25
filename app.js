@@ -1,6 +1,6 @@
 const videoContainer = document.querySelector('.video-container');
 
-let api_key = "api key";
+let api_key = "AIzaSyAyRUXdXuAShdGdlobE82faU-uQX9qXkak";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 let search = "https://www.googleapis.com/youtube/v3/search";
@@ -37,7 +37,7 @@ const getChannelIcon = (video_data) => {
 const makeVideoCard = (data) => {
     console.log(data)
     videoContainer.innerHTML += `
-    <div class="video" onclick="location.href="https://www.youtube.com/watch?v=${data.id}"">
+    <div class="video" onclick="location.href='https://www.youtube.com/watch?v=${data.id}'">
         <img src="${data.snippet.thumbnails.high.url}" class="thumbnail" alt="">
 
         <div class="content">
@@ -64,11 +64,13 @@ searchBtn.addEventListener('click', () => {
 })
 
 function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
     document.getElementById("mySidebar").style.display = "block";
-
+    document.getElementById("openNav").style.display = 'none';
   }
-  
   function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
     document.getElementById("mySidebar").style.display = "none";
-
+    document.getElementById("openNav").style.display = "inline-block";
   }

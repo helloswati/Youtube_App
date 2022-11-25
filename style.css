@@ -300,5 +300,7 @@ body {
     padding-top: 350px;
     display: grid;
     grid-column: 1 / 2;
+    position: fixed;
 }
+
 
