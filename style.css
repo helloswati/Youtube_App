@@ -79,6 +79,7 @@ body {
     border: 2px solid #dbdbdb;
     padding: 5px 0;
     border-left: none;
+    cursor: pointer;
 }
 
 .search-btn img {
@@ -196,6 +197,7 @@ body {
 .video {
     min-height: 250px;
     height: auto;
+    cursor: pointer;
 }
 
 .thumbnail {
