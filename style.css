@@ -176,7 +176,6 @@ body {
     font-size: 15px;
     cursor: pointer;
     z-index: -1;
-    width: 100%;
 }
 
 .filter-options.active {
@@ -245,7 +244,7 @@ body {
 
 @media (max-width:425px) {
     .search-box {
-        width:50px
+        display: none;
     }
 }
 
@@ -285,7 +284,11 @@ body {
     }
 }
 
-
+@media (max-width: 425px) {
+    .filters {
+        width: 100px
+    }
+}
 
 #mySidebar {
     align-items: baseline;
