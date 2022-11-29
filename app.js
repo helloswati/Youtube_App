@@ -1,6 +1,6 @@
 const videoContainer = document.querySelector('.video-container');
 
-let api_key = "API KEY";
+let api_key = "AIzaSyAyRUXdXuAShdGdlobE82faU-uQX9qXkak";
 let video_http = "https://www.googleapis.com/youtube/v3/videos?";
 let channel_http = "https://www.googleapis.com/youtube/v3/channels?";
 let search = "https://www.googleapis.com/youtube/v3/search";
@@ -66,10 +66,50 @@ searchBtn.addEventListener('click', () => {
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
 
-  }
-  
-  function w3_close() {
+}
+
+function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 
-  }
+}
 
+
+function myFunction() {
+    location.href = "https://www.youtube.com/results?search_query=Css";
+}
+
+function mfunction() {
+    location.href = "https://www.youtube.com/results?search_query=Web Development";
+}
+
+function mFunction() {
+    location.href = "https://www.youtube.com/results?search_query=python";
+}
+
+function myFunction() {
+    location.href = "https://www.youtube.com/results?search_query=Css";
+}
+
+function myFunctions() {
+    location.href = "https://www.youtube.com/results?search_query=Entertainment";
+}
+
+function myFun() {
+    location.href = "https://www.youtube.com/results?search_query=Music";
+}
+
+function myFunc() {
+    location.href = "https://www.youtube.com/results?search_query=Javascript";
+}
+
+function myFunct() {
+    location.href = "https://www.youtube.com/results?search_query=Artificial Intelligence";
+}
+
+function myFuncti() {
+    location.href = "https://www.youtube.com/results?search_query=Machine Learning";
+}
+
+function myFunctio() {
+    location.href = "https://www.youtube.com/results?search_query=Trending ";
+}
